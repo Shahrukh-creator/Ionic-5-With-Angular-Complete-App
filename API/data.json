@@ -1,0 +1,54 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "email": "tony1234@gmail.com",
+      "password": "shahrukhshahid@123"
+    },
+    {
+      "id": 2,
+      "email": "Jamal@gmail.com",
+      "password": "shahrukhshahid@1234"
+    },
+    {
+      "id": 3,
+      "email": "Hamza@gmail.com",
+      "password": "shahrukhshahid@1234"
+    },
+    {
+      "id": 4,
+      "email": "Arslan@gmail.com",
+      "password": "shahrukhshahid@1234"
+    },
+    {
+      "id": 5,
+      "email": "Sarmad@gmail.com",
+      "password": "shahrukhshahid@1234"
+    },
+    {
+      "id": 6,
+      "email": "Hassan@gmail.com",
+      "password": "shahrukhshahid@1234"
+    },
+    {
+      "email": "Salman@gmail.com",
+      "password": "shahrukhshahid@1234",
+      "id": 7
+    },
+    {
+      "email": "HameedGul@gmail.com",
+      "password": "Shahrukhshahid@1234",
+      "id": 8
+    },
+    {
+      "email": "Yasir@gmail.com",
+      "password": "Shahrukhshahid@1234",
+      "id": 9
+    },
+    {
+      "email": "Hamza@gmail.com",
+      "password": "Shahrukh@1234",
+      "id": 10
+    }
+  ]
+}

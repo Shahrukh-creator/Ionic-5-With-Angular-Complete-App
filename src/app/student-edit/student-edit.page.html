@@ -1,0 +1,33 @@
+<!-- student-edit.page.html -->
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title >Edit User Record</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="login-logo">
+    <img src="assets/logo1.png" alt="Ionic logo"/>
+  </div>
+
+  <ion-item>
+    <ion-label  class = "label-design">Email: </ion-label>
+    <ion-input [(ngModel)]="data.email" placeholder="Enter Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class = "label-design">Password: </ion-label>
+    <ion-input [(ngModel)]="data.password" placeholder="Enter Password"></ion-input>
+  </ion-item>
+  <ion-row style="height: 15px"></ion-row>
+  
+  <ion-button class = "buttton-design"  expand="block" (click)="update()" color="success" size="small">
+    Update
+  </ion-button>
+  <ion-button  class = "buttton-design" expand="block" [routerLink]="[ '/user-list']" color="danger" size="small">
+    Cancel
+  </ion-button>
+</ion-content>

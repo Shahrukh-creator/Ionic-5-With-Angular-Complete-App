@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title class="centered-User-list">User List</ion-title>
+
+    <ion-buttons slot="start">
+  
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-margin">
+
+  <ion-grid class="ion-margin">
+
+    <ion-row *ngFor="let item of studentsData">
+      
+  <ion-card class="ion-padding">
+    <div class="login-logo">
+      <img src="assets/logo1.png" alt="Ionic logo"/>
+    </div>
+
+    <ion-card-header style = 'font-size: large; font-weight: bold;'>
+      User {{ item.id }}
+    </ion-card-header>
+    <ion-card-content>
+     <h1 class  = "header1-design">Email: </h1> <h2>{{ item.email }}</h2>
+     <h1 class  = "header1-design">Password: </h1><h2>{{ item.password }}</h2>
+    </ion-card-content>
+
+    <ion-button color="warning" size="small" [routerLink]="['/student-edit/', item.id]">
+      <ion-icon name="create"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" size="small" (click)="delete(item)">
+      <ion-icon name="trash"></ion-icon>
+    </ion-button>
+
+  </ion-card>
+   
+
+  </ion-row>
+
+
+  </ion-grid>
+
+</ion-content>
+
+
